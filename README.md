@@ -1,5 +1,5 @@
-#CookBook Recipes
+# CookBook Recipes
 
-##Is an app built to help users easily find and add multiude of recipes. 
+## Is an app built to help users easily find and add multiude of recipes. 
 
-**Built using swift. 
+** Built using swift **
