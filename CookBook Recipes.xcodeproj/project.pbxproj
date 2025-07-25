@@ -6,17 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EFA68C272E34080200D12D22 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA68C242E34080200D12D22 /* Recipe.swift */; };
+		EFA68C282E34080200D12D22 /* CookBook_RecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA68C222E34080200D12D22 /* CookBook_RecipesApp.swift */; };
+		EFA68C292E34080200D12D22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA68C202E34080200D12D22 /* ContentView.swift */; };
+		EFA68C2A2E34080200D12D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA68C1F2E34080200D12D22 /* Assets.xcassets */; };
+		EFA68C2B2E34080200D12D22 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EFA68C232E34080200D12D22 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		EFA68C1F2E34080200D12D22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFA68C202E34080200D12D22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFA68C212E34080200D12D22 /* CookBook Recipes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "CookBook Recipes.xcodeproj"; sourceTree = "<group>"; };
+		EFA68C222E34080200D12D22 /* CookBook_RecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBook_RecipesApp.swift; sourceTree = "<group>"; };
+		EFA68C232E34080200D12D22 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EFA68C242E34080200D12D22 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		EFFE95602E32E2F2000FD845 /* CookBook Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CookBook Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		EFFE95622E32E2F2000FD845 /* CookBook Recipes */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "CookBook Recipes";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EFFE955D2E32E2F2000FD845 /* Frameworks */ = {
@@ -29,11 +35,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EFA68C252E34080200D12D22 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFA68C2C2E34081700D12D22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFA68C202E34080200D12D22 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFA68C2E2E34082200D12D22 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EFA68C2F2E34082E00D12D22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFA68C242E34080200D12D22 /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EFFE95572E32E2F2000FD845 = {
 			isa = PBXGroup;
 			children = (
-				EFFE95622E32E2F2000FD845 /* CookBook Recipes */,
+				EFA68C232E34080200D12D22 /* README.md */,
+				EFA68C1F2E34080200D12D22 /* Assets.xcassets */,
+				EFA68C212E34080200D12D22 /* CookBook Recipes.xcodeproj */,
+				EFA68C222E34080200D12D22 /* CookBook_RecipesApp.swift */,
+				EFA68C2C2E34081700D12D22 /* View */,
+				EFA68C2F2E34082E00D12D22 /* Model */,
 				EFFE95612E32E2F2000FD845 /* Products */,
+				EFA68C2E2E34082200D12D22 /* ViewModel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +100,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				EFFE95622E32E2F2000FD845 /* CookBook Recipes */,
-			);
 			name = "CookBook Recipes";
 			packageProductDependencies = (
 			);
@@ -82,6 +119,7 @@
 				TargetAttributes = {
 					EFFE955F2E32E2F2000FD845 = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 				};
 			};
@@ -97,6 +135,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EFFE95612E32E2F2000FD845 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EFA68C252E34080200D12D22 /* Products */;
+					ProjectRef = EFA68C212E34080200D12D22 /* CookBook Recipes.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EFFE955F2E32E2F2000FD845 /* CookBook Recipes */,
@@ -109,6 +153,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA68C2A2E34080200D12D22 /* Assets.xcassets in Resources */,
+				EFA68C2B2E34080200D12D22 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA68C272E34080200D12D22 /* Recipe.swift in Sources */,
+				EFA68C282E34080200D12D22 /* CookBook_RecipesApp.swift in Sources */,
+				EFA68C292E34080200D12D22 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7A2D9PBVCU;
@@ -269,6 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Kai.CookBook-Recipes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -279,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7A2D9PBVCU;
